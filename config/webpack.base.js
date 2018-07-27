@@ -105,8 +105,8 @@ module.exports = {
     new webpack.HotModuleReplacementPlugin(),
     new webpack.DefinePlugin({
       YPMEI_LOGIN_URL:JSON.stringify('ypmei')
-    }),
-    new I18nPlugin(lanuages['cn'])
+    })//,
+    // new I18nPlugin(lanuages['cn'])
   ],
   devServer: {
     noInfo: false,
