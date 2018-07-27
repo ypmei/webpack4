@@ -1,0 +1,56 @@
+.setting-img{
+  position: relative;
+  display: inline-block;
+  width: 225px;
+  height: 145px;
+  overflow: hidden;
+  margin: 8px;
+  .setting-img-center{
+    box-sizing: border-box;
+    display: table-cell;
+    width: 225px;
+    height: 145px;
+    background-color: rgba(0,0,0,0.4);
+    vertical-align: middle;
+    text-align: center;
+    overflow: hidden;
+    img{
+      vertical-align: middle;
+    }
+  }
+  .setting-control{
+    position: absolute;
+    bottom:0;
+    .setting-mesg{
+      padding: 0px 10px;
+      p{
+        color: #fff;
+        font-size: 12px;
+        margin:0;
+      }
+    }
+  }
+  &.dashed{
+    border: 1px dashed #fff;
+  }
+  &.solid{
+    border: 1px solid rgba(255,255,255,0.6);
+  }
+  &.active{
+    border-color:#85f5f7;
+  }
+  &.hashover:hover{
+    border: 1px dashed #85f5f7;
+    cursor: pointer;
+  }
+  .skin{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url("../../static/images/skin.png") center center no-repeat;
+    background-size: cover;
+    z-index: 5;
+  }
+}

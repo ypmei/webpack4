@@ -1,0 +1,54 @@
+.canvasEditTools{
+  .canvasEditToolBtns{
+    .btn{
+      background: none;
+      border:0;
+      color:#009bff;
+      padding: 0 3px;
+      line-height: 26px;
+      .iconfont{
+        line-height: 20px;
+        font-size: 20px;
+        &:hover{
+          color:#5ebdff;
+        }
+        &:active{
+          color: #ffffff;;
+        }
+      }
+      &.active{
+        .iconfont{
+          color: #ffffff;
+        }
+      }
+    }
+    .double-icon{
+      position:relative;
+      height:26px;
+      .double-icon-t{
+        position:absolute;
+        top:3px;
+        left:4px;
+        font-size: 18px;
+      }
+      .double-icon-b{
+        position:absolute;
+        bottom:2px;
+        left:4px;
+        font-size: 18px;
+      }
+    }
+    .color-picker{
+      .pick-btn{
+        height:26px;
+        padding:0
+      }
+    }
+    .tools{
+      .pick-btn{
+        height:26px;
+        padding:0
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+.DS_Store
+.vscode/
+node_modules/
+.npmglobal/
+dist/
+coverage
+npm-debug.log
+latest.zip
+lint-report
+latest.zip

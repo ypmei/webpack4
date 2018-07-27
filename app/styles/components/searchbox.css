@@ -1,0 +1,40 @@
+.searchbox{
+  position: relative;
+  input{
+    width:160px;
+    height:20px;
+    color:#fff;
+    padding: 3px 10px;
+    border-radius: 13px;
+    border: 1px solid rgba(255,255,255,0.2);
+    background-color: inherit;
+    box-sizing: content-box;
+    &:hover{
+      border: 1px solid rgba(255,255,255,0.4);
+    }
+    &:focus{
+      border: 1px solid rgba(255,255,255,0.6);
+      outline:0;
+    }
+  }
+  a{
+    position: absolute;
+    top:0px;
+    left: 150px;
+    width: 28px;
+    height:28px;
+    line-height:28px;
+    font-size: 26px;
+    z-index:9;
+    cursor:pointer;
+    &:hover{
+      color:#69c4ff;
+    }
+  }
+  .iconfont{
+    color: #458df9;
+    &:hover{
+      color:#69c4ff;
+    }
+  }
+}

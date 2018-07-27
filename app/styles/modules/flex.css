@@ -1,0 +1,23 @@
+/**
+ *
+ * .flex-1, .flex-2, .flex-3, .flex-4, .flex-5.
+ * .flex-col-1, .flex-col-2, .flex-col-3, .flex-col-4, .flex-col-5.
+ * .flex-row-1, .flex-row-2, .flex-row-3, .flex-row-4, .flex-row-5.
+ *
+ */
+@for $index from 1 to 10 {
+  .flex-$index {
+    display: flex;
+    flex: $index 0 0%;
+  }
+  .flex-row-$index {
+    display: flex;
+    flex-direction: row;
+    flex: $index 0 0%;
+  }
+  .flex-col-$index {
+    display: flex;
+    flex-direction: column;
+    flex: $index 0 0%;
+  }
+}

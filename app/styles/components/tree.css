@@ -1,0 +1,12 @@
+.tree-container {
+  margin: 0px auto;
+  .node {
+    font: 12px sans-serif;
+    cursor: pointer;
+  }
+  .link {
+    fill: none;
+    stroke: #ccc;
+    stroke-width: 1.5px;
+  }
+}

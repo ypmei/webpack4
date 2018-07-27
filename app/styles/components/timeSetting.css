@@ -1,0 +1,51 @@
+.time-setting{
+  padding:10px;
+}
+.time-pick-box{
+  width:200px;
+  border : 1px solid #0275d8;
+  padding: 10px 8px;
+  background: #D1E9FF;
+  border-radius: 2px;
+  display: inline-flex;
+  flex-direction: row;
+  align-items:center;
+  -moz-user-select:none;
+  .hour-box,.minute-box,.second-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    .input-box{
+      width:100%;
+      text-align: center;
+      box-sizing: border-box;
+    }
+    .up{
+      text-align: center;
+      cursor:pointer;
+      display: inline-block;
+      width:100%;
+      margin-bottom: 5px;
+      align-self:stretch;
+      color: #0275d8;
+      &:hover{
+        background-color:#b9ddfe;
+      }
+    }
+    .down{
+      text-align: center;
+      cursor: pointer;
+      display: inline-block;
+      width:100%;
+      margin-top: 5px;
+      color: #0275d8;
+      &:hover{
+        background-color: #b9ddfe;
+      }
+    }
+  }
+  .point{
+    flex:0 0 auto;
+  }
+}

@@ -1,0 +1,102 @@
+.form-control{
+    background-color: inherit;
+    background:none;
+    border: 0;
+    .form-label{
+        display: inline-block;
+        min-width: 80px;
+        font-size: 12px;
+        color:#333333;
+        padding: 6px 5px;
+        vertical-align: top;
+        text-align: left;
+    }
+    .form-label-white{
+      color:#ffffff;
+    }
+    .form-value{
+        display: inline-block;
+        width: 200px;
+    }
+    .form-input{
+        display: inline-block;
+        width: 200px;
+        height:26px;
+        padding: 0 10px;
+        border:1px solid #dbdbdb;
+        border-radius: 10px;
+        &:hover{
+            border-color:#22a6ff;
+        }
+        &:focus{
+            border-color:#22a6ff;
+            outline:0;
+        }
+        &.form-textarea{
+            height: 52px;
+            line-height: 2;
+            resize: none;
+        }
+    }
+    .form-hint{
+        display: inline-block;
+        text-align: center;
+        color:#ff0000;
+    }
+    .form-disabled{
+        background-color: #dedede;
+    }
+}
+.main-form-control{
+    .form-label{
+        color: #ffffff;
+    }
+    .form-value{
+        color:#c2e0ff;
+        line-height: 26px;
+    }
+    .form-input{
+        color:#fff;
+        border-color:rgba(255,255,255,0.2);
+        background-color: inherit;
+    }
+    .form-size-120{
+        width: 120px;
+    }
+}
+.tablemove-wrapper{
+    clear:both;
+    background:#e0e0e0;
+    .tablemove-title{
+        font-size: 14px;
+        color:#666666;
+        text-align: center;
+    }
+    .tablemove-content{
+        border-top:1px solid #cccccc;
+        margin:5px 20px;
+        .tablemove-filter{
+            height:25px;
+            padding: 5px 0;
+            .label-filter{
+                font-size: 12px;
+                color:#666;
+            }
+        }
+        .tablemove-table{
+            clear: both;
+            min-height: 200px;
+            background-color: #fff;
+            margin-top: 5px;
+        }
+    }
+    .tablemove-arrow{
+        .iconfont{
+            font-size: 28px;
+            color:#0189e4;
+            &:hover{
+                color:#5ebdff;
+            }
+        }
+    }
+}

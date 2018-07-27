@@ -1,0 +1,11 @@
+.apdex-color{
+  font-size: 11px;
+  color: #fff;
+  display: inline-block;
+  padding: 0px 5px;
+  border-radius: 4px;
+  text-align: center;
+  background-color: #ffd24d;
+  transform-origin: 0;
+  transform: scale(.8);
+}

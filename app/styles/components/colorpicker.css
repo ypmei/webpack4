@@ -1,0 +1,50 @@
+.color-picker{
+  .pick-btn{
+    width: 26px;
+    height: 22px;
+    background-color: #4f6297;
+    border-radius: 4px;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    .iconfont {
+      font-size: 20;
+      color: #e1e5ed;
+    }
+  }
+  .dropdown{
+    .btn{
+      border: none;
+      background: none;
+      padding: 0px;
+      > i {
+        display: none;
+      }
+    }
+  }
+  .input-color{
+    .text{
+      display: inline-block;
+      width: 100px;
+      height: 20px;
+      line-height: 20px;
+      color: #fff;
+      padding: 3px 10px;
+      border-radius: 13px;
+      border: 1px solid hsla(0,0%,100%,.2);
+      background-color: inherit;
+      box-sizing: content-box;
+      outline: none;
+      margin: 0px 5px;
+      &:hover{
+        border: 1px solid hsla(0,0%,100%,.5);
+      }
+    }
+    .circle{
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      border-radius: 8px;
+    }
+  }
+}

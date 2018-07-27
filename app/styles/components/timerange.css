@@ -1,0 +1,106 @@
+.timerange-container {
+  font-size:12px;
+  margin-left: 10px;
+  display: inline-block;
+  .btn{
+    color:#c2e0ff;
+    background: none;
+    border:1px solid rgba(255,255,255,0.1);
+    padding: 5px 25px;
+    line-height: 1;
+  }
+  .dropdown {
+    margin-left: 10px;
+    &.active{
+      .dropdown-main{
+        background:#fff;
+      }
+    }
+  }
+
+  .dropdown-toggle {
+    line-height: 1;
+    color:#c2e0ff;
+    //border:1px solid transparent;
+    &:hover{
+       border:1px solid rgba(255,255,255,0.1);
+     }
+    .iconfont{
+      vertical-align: middle;
+    }
+    .text{
+      vertical-align: middle;
+      margin: 0px 5px;
+    }
+  }
+
+  .timerange-options{
+    margin:15px 20px;
+    .timerange-option-container {
+      white-space: nowrap;
+      text-align: right;
+      .timerange-option {
+        font-size: 12px;
+        display: inline-block;
+        box-sizing: border-box;
+        margin: 5px;
+        width: 4.3em;
+        line-height: 3.6em;
+        text-align: center;
+        cursor: pointer;
+        background-color: #F1F1F1;
+        border: 1px solid #EAEAEA;
+        border-radius: 3px;
+        color: #666;
+        &:hover{
+          background-color: #D1E9FF;
+          border: 1px solid #D1E9FF;
+        }
+        &.active {
+          background: #458EF9;
+          border: 1px solid #458EF9;
+          color: #fff;
+        }
+      }
+      >li:first-child,>li:last-child{
+        margin-left: 0;
+      }
+    }
+    .datetime-item-container {
+      white-space: nowrap;
+      .datetime-item {
+        display: inline-block;
+        margin: 10px 5px;
+      }
+      .middle-text{
+        padding:0 25px;
+        position: relative;
+        top:-305px;
+        font-weight: bold;
+      }
+    }
+    .timepicker-footer {
+      height: 30px;
+      text-align: right;
+      .btn{
+        background: #458df9;
+        &:hover{
+          color:#fff;
+        }
+      }
+      .print-text{
+        padding-right:10px;
+      }
+    }
+    .timerange-ontime{
+      font-size: 1.2rem;
+      padding: 10px 5px 5px 5px;
+      span{
+        margin-left: 5px;
+      }
+      input, span{
+        vertical-align: middle;
+      }
+    }
+  }
+}

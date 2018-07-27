@@ -1,0 +1,59 @@
+.trigger {
+  width: 32px;
+  display: inline-block;
+  vertical-align: middle;
+  height: 18px;
+  border-radius: 18px;
+  border: 2px #dedede solid;
+  cursor: pointer;
+  transition: border-color 200ms;
+  background-color: #fff;
+
+  label {
+    display: block;
+    margin-bottom: 0;
+    height: 100%;
+    cursor: pointer;
+  }
+
+  .trigger-circle {
+    width: 20px;
+    height: 18px;
+    display: inline-block;
+    border: 2px #dedede solid;
+    margin-top: -2px;
+    margin-left: -2px;
+    border-radius: 20px;
+    background-color: #fff;
+    transition: transform 200ms, background-color 200ms;
+    cursor: pointer;
+  }
+
+  input[type=checkbox] {
+    display: none;
+  }
+
+  &.checked,
+  &:checked {
+    border-color: #cfd7df;
+    background-color: #72ec19;
+    .trigger-circle {
+      transform: translateX(12px);
+      border-color: #cfd7df
+    }
+  }
+
+  &.disabled,
+  &:disabled {
+    label {
+      cursor: not-allowed;
+    }
+
+    &,
+    .trigger-circle {
+      cursor: not-allowed;
+      border-color: #d0d0d0;
+      background-color: #e4e4e4
+    }
+  }
+}

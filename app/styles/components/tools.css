@@ -1,0 +1,212 @@
+.tools{
+  .canvasEditToolBtns{
+    .pick-btn{
+      background-color: #4f6297;
+      border-radius: 4px;
+      text-align: center;
+      vertical-align: middle;
+      cursor: pointer;
+      padding: 0;
+      min-width: 26px;
+      color: #FFF;
+      .iconfont {
+        color: #e1e5ed;
+      }
+    }
+    .dropdown{
+      .btn{
+        border: none;
+        background: none;
+        padding: 0px;
+        > i {
+          display: none;
+        }
+      }
+    }
+    .tools-warp{
+      color:#FFF;
+      display: inline-block;
+      margin-left: 5px;
+      ul li{
+        cursor: pointer;
+        background-color: rgba(255,255,255,0.1);
+        border-bottom:1px solid rgba(255,255,255,0.1);
+        &:hover {
+          background-color: rgba(0,0,0,0.1);
+        }
+      }
+    }
+    .warp{
+      display: block;
+      width: 100px;
+      height: 20px;
+      line-height: 20px;
+      color: #fff;
+      padding: 3px 10px;
+      border-radius: 13px;
+      border: 1px solid hsla(0,0%,100%,.2);
+      background-color: inherit;
+      box-sizing: content-box;
+      outline: none;
+      margin: 0px 5px;
+      &:hover{
+        border: 1px solid hsla(0,0%,100%,.5);
+      }
+    }
+    .text-size{
+      .warp{
+        .text{
+          display: inline-block;
+          width: 80%;
+          text-align: left;
+        }
+        .iconfont{
+          display: inline-block;
+        }
+      }
+    }
+    .line-size{
+      .warp{
+        .line-box{
+          display: inline-block;
+          width: 80%;
+          height: 12px;
+          .line {
+            background: #FFF;
+            transform: rotate(0deg);
+          }
+        }
+        .iconfont{
+          display: inline-block;
+        }
+      }
+      .line-box{
+        height: 16px;
+        padding-top: 10px;
+        width: 20px;
+        overflow: hidden;
+        .line {
+          background: #FFF;
+          transform: rotate(-45deg);
+        }
+      }
+      ul li {
+        height: 15px;
+        padding-top: 12px;
+        .line {
+          background: #FFF;
+        }
+      }
+    }
+    .line-type{
+      .warp{
+        .line-box{
+          display: inline-block;
+          width: 80%;
+          height: 12px;
+          .line {
+            position: relative;
+            left: 5px;
+            top: 5px;
+          }
+        }
+        .iconfont{
+          display: inline-block;
+        }
+      }
+      ul li {
+        height: 15px;
+        padding-top: 12px;
+      }
+    }
+    .shape-type{
+      ul li {
+        text-align: center;
+        padding-top: 10px;
+        .iconfont{
+          font-size: 40px;
+        }
+      }
+    }
+    .select-chart{
+      i{
+        display: inline-block;
+        width: 40px;
+        text-align: center;
+        cursor: pointer;
+        background-color: #2d3959;
+      }
+      .active{
+        background-color: #2d56c8;
+        color: #fff;
+      }
+      .number{
+        height: 24px;
+        border: 1px solid #8399b4;
+        border-top-left-radius: 12px;
+        border-bottom-left-radius: 12px;
+      }
+      .gauge{
+        height: 24px;
+        border-top: 1px solid #8399b4;
+        border-bottom: 1px solid #8399b4;
+      }
+      .line{
+        height: 24px;
+        border: 1px solid #8399b4;
+        border-top-right-radius: 12px;
+        border-bottom-right-radius: 12px;
+      }
+    }
+    .images-warp{
+      width: 265px;
+      padding: 0px 0px 10px 10px;
+      .top{
+        background-color: #8b93a8;
+        color: #00010e;
+        margin: 0px 10px 5px 5px;
+        border-radius: 2px;
+        padding-left: 10px;
+        line-height: 28px;
+        margin-top: 10px;
+        .iconfont{
+          float: right;
+          margin-right: 10px;
+          cursor: pointer;
+        }
+      }
+      ul li{
+        width: 80px;
+        height: 80px;
+        border-radius: 5px;
+        background-color: #5b6888;
+        display: inline-block;
+        text-align: center;
+        margin: 2.5px;
+        position: relative;
+        img{
+          margin-top: 10px;
+          width: 50px;
+          max-height: 50px;
+        }
+        span{
+          position: absolute;
+          top: 58px;
+          left: 13px;
+          color: #00010e;
+        }
+        .img-upload-btn{
+          cursor: pointer;
+          padding-top: 28px;
+          input{
+            cursor: pointer;
+          }
+          .iconfont{
+            color:#FFF;
+            font-size: 30px;
+          }
+        }
+      }
+    }
+  }
+}

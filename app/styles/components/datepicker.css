@@ -1,0 +1,84 @@
+.datetimepicker {
+  white-space: nowrap;
+  .calendar-date {
+    display: inline-block;
+    vertical-align: top;
+    width: 265px;
+    background-color: #FFF;
+    box-sizing: border-box;
+    padding: 10px;
+    border:1px solid #EAEAEA;
+    .table-condensed {
+      table-layout: fixed;
+      width: 100%;
+      th, td {
+        height: 18px;
+        line-height: 18px;
+        padding: 3px 0px 4px 0px;
+        color: #333;
+        white-space: nowrap;
+        text-align: center;
+      }
+      th {
+        font-weight: bold;
+        .arrow {
+          width: 24px;
+          display: block;
+          font-size: 12px;
+          &:hover {
+            background-color: #D1E9FF;
+            cursor: pointer;
+          }
+        }
+      }
+      td {
+        border-radius: 3px;
+        cursor: pointer;
+        &:hover {
+          background-color: #d1e9ff;
+        }
+        &.disabled {
+          color: #ddd;
+          cursor: default;
+          &:hover {
+            background-color: #FFF;
+          }
+        }
+        &.active {
+          background-color: #458df9;
+          color: #FFF;
+        }
+      }
+    }
+  }
+  .timepicker {
+    margin: 10px 0;
+    background: #fff;
+    line-height: 2;
+    color: #333;
+    .label {
+      display: inline-block;
+      margin-right: 10px;
+      font-weight: bold;
+      color: #333;
+    }
+    .print-time{
+      height:35px;
+      line-height: 35px;
+      padding-bottom:15px;
+      .tips{
+        padding:0 40px 0 30px;
+      }
+    }
+    .time-item{
+      height:40px;
+      .label{
+        margin-right: 30px;
+      }
+      .hour,.minute{
+        width:205px;
+        float:right;
+      }
+    }
+  }
+}

@@ -1,0 +1,80 @@
+.healthbar{
+  .progress {
+      display: none;
+      overflow: hidden;
+      height: 10px;
+      border-radius: 10px;
+      background-color: #e4e4e4;
+      position: relative;
+      .bar {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 0;
+        height: 100%
+      }
+      .success {
+        background-color: #4fdc4f
+      }
+      .warning {
+        background-color: #76ddd9
+      }
+      .secondary {
+        background-color: #dfd332
+      }
+      .main {
+        background-color: #ee853f
+      }
+      .danger {
+        background-color: #db4444
+      }
+  }
+  ul{
+    li{
+      display: inline-block;
+      span{
+        font-size: 16px;
+          &.iconfont{
+           cursor:pointer;
+           &:hover{
+             animation:statusHover 1s infinite;
+           }
+          }
+      }
+      .text{
+        color:#fff;
+        font-size: 14px;
+        margin-right: 20px;
+        margin-left: 4px;
+      }
+      &.all{
+           color:#fff;
+           font-size: 14px;
+           cursor:pointer;
+       }
+    }
+  }
+  .success {
+      color: #4fdc4f
+  }
+  .warning {
+      color: #76ddd9
+  }
+  .secondary {
+      color: #dfd332
+  }
+  .main {
+      color: #ee853f
+  }
+  .danger {
+      color: #db4444
+  }
+}
+@keyframes statusHover {
+  0%{
+    opacity: 0.8
+  }
+  100%{
+    opacity: 1
+  }
+}

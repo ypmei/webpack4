@@ -1,0 +1,64 @@
+.small-chart-box{
+  height:70px;
+  border-radius: 3px;
+  margin: 5px;
+  overflow: hidden;
+  .small-chart-add{
+    padding: 6px 0;
+    text-align: center;
+    /*vertical-align: middle;*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 60px;
+  }
+  .icon-add-large{
+    font-size: 30px;
+    color:#000;
+  }
+  .bg-success{
+    background-color: #2fb624;
+  }
+  .bg-warning{
+    background-color: #48cbc6;
+  }
+  .bg-secondary{
+    background-color: #ffcc00;
+  }
+  .bg-main{
+    background-color: #ff6600;
+  }
+  .bg-danger{
+    background-color: #cc1111;
+  }
+}
+
+.small-chart{
+  position: relative;
+  padding-left: 60px;
+  .small-title{
+    font-size: 14px;
+    color:#000;
+    padding-top: 5px;
+  }
+  .small-value{
+    position: absolute;
+    top:0;
+    right:0;
+    min-width: 65px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    font-size: 12px;
+    color: #000;
+    border-radius: 3px;
+    background-color: rgba(255,255,255,0.4);
+  }
+}
+
+td {
+  .small-chart{
+    padding-left: 0;
+  }
+}

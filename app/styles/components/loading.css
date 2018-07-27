@@ -1,0 +1,16 @@
+.loading{
+  text-align: center;
+  .iconfont{
+    display: inline-block;
+    font-size: 30px;
+    animation: loading-rotate 2s infinite linear;
+  }
+}
+@keyframes loading-rotate {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(359deg);
+	}
+}
