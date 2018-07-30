@@ -38,8 +38,7 @@ function getOpts(opts) {
 }
 
 function getUrl(url, opts) {
-  const queryUrl = `${url}?__vt_param__=${ONEAPM.token}`;
-  return isHeadOrGet(opts) ? queryUrl + (/\?/.test(queryUrl) ? '&' : '?') + serializeParams(opts.body) : queryUrl
+  return isHeadOrGet(opts) ? url + (/\?/.test(url) ? '&' : '?') + serializeParams(opts.body) : url
 }
 
 function getHeaders(opts) {

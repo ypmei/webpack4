@@ -1,6 +1,6 @@
 import './styles/main.css'
 import React from 'react'
-import { render } from 'react-dom'
+import ReactDOM, { render } from 'react-dom'
 import { HashRouter } from 'react-router-dom'
 import { renderRoutes } from 'react-router-config'
 import Tooltip from './components/Tooltip'
