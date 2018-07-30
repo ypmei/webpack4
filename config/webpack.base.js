@@ -17,6 +17,23 @@ module.exports = {
     chunkFilename: 'scripts/[name].js',
     path: path.join(process.cwd(), 'dist')
   },
+  optimization:{
+    splitChunks:{
+      cacheGroups: {
+        styles: {
+          name: 'styles',
+          test: /\.css$/,
+          chunks: 'all',
+          enforce: true
+        },
+        commons: {
+          name: 'vender',
+          chunks: "all",
+          minChunks: 2
+        }
+      }
+    }
+  },
   module:{
     rules: [
       {
@@ -28,7 +45,10 @@ module.exports = {
         test: /\.css$/,
         use: [
           {
-            loader: MiniCssExtractPlugin.loader
+            loader: MiniCssExtractPlugin.loader,
+            options: {
+              publicPath: '../'
+            }
           },
           {
             loader: 'css-loader',
@@ -70,7 +90,7 @@ module.exports = {
           {
             loader: 'file-loader',
             options: {
-              name: 'static/[path][name]-[hash].[ext]',
+              name: 'static/[path][name]-[hash:8].[ext]',
               context: 'app/',
               publicPath: ''
             }
@@ -78,23 +98,6 @@ module.exports = {
         ]
       }
     ]
-  },
-  optimization:{
-    splitChunks:{
-      cacheGroups: {
-        styles: {
-          name: 'styles',
-          test: /\.css$/,
-          chunks: 'all',
-          enforce: true
-        },
-        commons: {
-          name: 'vender',
-          chunks: "all",
-          minChunks: 2
-        }
-      }
-    }
   },
   plugins: [
     new webpack.ProvidePlugin({
@@ -105,8 +108,8 @@ module.exports = {
     new webpack.HotModuleReplacementPlugin(),
     new webpack.DefinePlugin({
       YPMEI_LOGIN_URL:JSON.stringify('ypmei')
-    })//,
-    // new I18nPlugin(lanuages['cn'])
+    }),
+    new I18nPlugin(lanuages['cn'])
   ],
   devServer: {
     noInfo: false,

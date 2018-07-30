@@ -9,7 +9,7 @@
     "serve": "webpack-dev-server --config config/webpack.test.js --mode development --inline --hot",
     "zip": "cd dist && zip -rq ../latest.zip ./* && cd ..",
     "build": "npm install && npm run clean && webpack --config config/webpack.prod.js --mode production && npm run zip",
-    "test": "npm run test"
+    "test": "npm run jest"
   },
   "keywords": [],
   "author": "ypmei",
